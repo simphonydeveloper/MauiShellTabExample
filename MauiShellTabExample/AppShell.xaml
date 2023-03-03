@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiShellTabExample.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiShellTabExample"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <local:CustomShellTab ItemSource="{x:Static local:PageInstance.Pages}" x:DataType="local:PageInstance">
+            
+        </local:CustomShellTab>
+    </TabBar>
+
+</Shell>
